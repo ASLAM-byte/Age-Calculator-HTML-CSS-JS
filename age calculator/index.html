@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Age Calculator</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1 class="title">Age Calculator</h1>
+
+    <label>Date of Birth</label>
+    <input type="date" id="dob">
+
+    <label class="label">Calculate age as of:</label>
+    <div class="radio-row">
+        <label><input type="radio" name="ref" value="today" checked> Today</label>
+        <label><input type="radio" name="ref" value="custom"> Custom Date</label>
+    </div>
+
+    <div id="customDateBox" style="display:none;">
+        <label>Custom Reference Date</label>
+        <input type="date" id="refDate">
+    </div>
+
+    <button id="calcBtn">Calculate</button>
+    <p id="error" class="error"></p>
+
+    <div class="result-box">
+        <p><strong>Years:</strong> <span id="years">—</span></p>
+        <p><strong>Months:</strong> <span id="months">—</span></p>
+        <p><strong>Days:</strong> <span id="days">—</span></p>
+        <p><strong>Hours:</strong> <span id="hours">—</span></p>
+        <p><strong>Minutes:</strong> <span id="minutes">—</span></p>
+        <p><strong>Seconds:</strong> <span id="seconds">—</span></p>
+    </div>
+
+    <!--Next Birthday - CODES START FROM HERE ( ASLAM ) -->
+    <div class="next-birthday-box">
+        <div class="nb-title">Next Birthday</div>
+        <div id="nextBirthday" class="nb-value">—</div>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
